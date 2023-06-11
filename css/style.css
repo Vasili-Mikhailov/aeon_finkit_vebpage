@@ -1,0 +1,614 @@
+/* inter-regular - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v12-cyrillic-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-500 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v12-cyrillic-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-600 - cyrillic */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v12-cyrillic-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* icons */
+@font-face {
+    font-family: 'fin_kit';
+    src: url('../fonts/fin_kit.eot?9401682');
+    src: url('../fonts/fin_kit.eot?9401682#iefix') format('embedded-opentype'),
+         url('../fonts/fin_kit.woff2?9401682') format('woff2'),
+         url('../fonts/fin_kit.woff?9401682') format('woff'),
+         url('../fonts/fin_kit.ttf?9401682') format('truetype'),
+         url('../fonts/fin_kit.svg?9401682#fin_kit') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font-family: "fin_kit";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+   
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+   
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+   
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+   
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+   
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+   
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  /* padding: 0 60px; */
+}
+
+body{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #29374E;
+}
+
+.intro{
+  height: 678px;
+  background: url(../img/svg/hand.svg) no-repeat #CBECFF right;
+}
+
+.language_section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: end;
+  padding-top: 21px;
+  margin-bottom: 76px;
+}
+
+.lang_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lang_item{
+  margin-right: 19px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.lang_item:last-child{
+  margin-right: 0;
+}
+
+.chosen_lang{
+  width: 26px;
+  height: 24px;
+
+  background: #FFFFFF;
+  border-radius: 12px;
+  color: #0962E8;
+}
+
+.intro_content{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.intro_info{
+  max-width: 384px;
+  margin-right: 90px;
+  padding-right: 60px;
+}
+
+.intro_title{
+  display: flex;
+}
+
+.intro_title_text{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130%;
+  margin-bottom: 11px;
+}
+
+.title_highlight{
+  color: #0962E8;
+  background: #FFFFFF;
+  border-radius: 20px;
+  width: 122px;
+  height: 80px;
+  text-align: center;
+}
+
+.text_highlight{
+  color: #0962E8;
+}
+
+.intro_desc{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+  margin-bottom: 38px;
+}
+
+.intro_button{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: fit-content;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #0962E8;
+  border-radius: 8px;
+  padding: 14px 20px;
+}
+
+.benefits_cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  margin-bottom: 30px;
+  transform: translateY(-83px)
+}
+
+.benefits_item{
+  width: 241px;
+  height: 118px;
+  background: #FFFFFF;
+  box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.benefits_icon{
+  border-radius: 20px;
+  background: #EFF9FF;
+  color: #0962E8;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.benefits_card_content{
+  /* width: 201px;
+  height: 66px; */
+  display: flex;
+  padding: 20px;
+  /* flex-wrap: wrap; */
+}
+
+.banefits_text{
+  width: 160px;
+  height: 66px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.products_title{
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 130%;
+  width: 753px;
+  height: 98px;
+  margin: 0 auto 44px;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.products_grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  margin-bottom: 115px;
+}
+
+.products_item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0;
+  width: 502px;
+  height: 328px;
+  background: #E9F6FF;
+  border-radius: 30px;
+}
+
+.products_item_info{
+  padding: 37px 20px;
+}
+
+.products_item_title{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.products_item_desc{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.image_container{
+  display: flex;
+  align-items: flex-end;
+}
+
+.products_item_img{
+  width: 218px;
+  height: 291px;
+  left: 994px;
+  top: 1000px;
+
+  filter: drop-shadow(8px -8px 16px rgba(0, 0, 0, 0.06));
+  border-radius: 20px 20px 0px 0px;
+}
+
+.values_content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0;
+  padding-bottom: 60px;
+}
+
+.values_grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.values_title{
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+  margin-bottom: 21px;
+}
+
+.values_desc{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 21px;
+  width: 405px;
+  height: 60px;
+}
+
+.values_button{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #0962E8;
+  border-radius: 8px;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  max-width: fit-content;
+  text-decoration: none;
+}
+
+.values_item{
+  width: 231px;
+  height: 140px;
+
+  background: #FFFFFF;
+  border-radius: 30px;
+}
+
+.values_item_desc{
+  width: 200px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.values_item_icon{
+  border-radius: 20px;
+  background: #EFF9FF;
+  color: #0962E8;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper{
+    max-width: 375px;
+    padding: 0 20px;
+  }
+
+  .intro{
+    height: 674px;
+    background-position: 0% 0%;
+    background-size: 521px 498px;
+  }
+
+  .intro_title_text{
+    margin-bottom: 12px;
+  }
+
+  .intro_desc{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .intro_desc br{
+    display: none;
+  }
+
+  .intro_info{
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+
+  .intro_content{
+    padding-top: 100%;
+  }
+
+  .intro_button{
+    max-width: none;
+    display: block;
+    padding: 14px 34px;
+    margin-bottom: 20px;
+  }
+
+  .benefits{
+    background-color: #CBECFF;
+    padding: 20px 0px;
+    margin-bottom: 40px;
+  }
+  .benefits_cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 15px;
+    margin-bottom: 15px;
+    transform: none;
+  }
+  .benefits_item{
+    width: 164px;
+    height: 118px;
+  }
+  .banefits_text{
+    font-size: 14px;
+  }
+
+  .banefits_text br{
+    display: none;
+  }
+
+  .benefits_icon{
+    margin-bottom: 5px;
+  }
+
+  .benefits_card_content{
+    flex-wrap: wrap-reverse;
+    padding: 0px 17px;
+  }
+
+  .products_title{
+    font-weight: 600;
+    font-size: 24px;
+    width: 343px;
+    height: 62px;
+    margin: 0 auto 24px;
+  }
+
+  .products_grid{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .products_item{
+    width: 344px;
+    height: 215px;
+  }
+
+  .products_item_img{
+    width: 142px;
+    height: 190px;
+  }
+
+  .products_item_title{
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .products_item_desc{
+    font-size: 13px;
+  }
+
+  .values_content{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 37px;
+    padding-bottom: 0px;
+  }
+
+  .values_title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+
+  .values_desc{
+    text-align: center;
+    width: 343px;
+    height: 80px;
+  }
+
+  .values_info{
+    max-width: 343px;
+  }
+
+  .values_button{
+    max-width: none;
+    display: block;
+  }
+
+  .values_item_icon{
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+  }
+
+  .values_item_desc{
+    width: 145px;
+    font-size: 14px;
+    padding: 0px 0px 0px 10px;
+  }
+
+  .values_item{
+    width: 164px;
+    height: 118px;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  .values_grid{
+    gap: 20px 15px;
+  }
+  .values{
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper{
+    max-width: 768px;
+    padding: 0 40px
+  }
+
+  .intro{
+    height: 430px;
+    background-position: 200% 0%;
+    background-size: 600px auto;
+  }
+
+  .language_section{
+    margin-bottom: 37px;
+  }
+
+  .benefits_cards{
+    max-width: 510px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    transform: none;
+    margin: 10px auto 20px;
+
+  }
+  .products_title{
+    margin: 0 auto 30px;
+    width: 600px;
+  }
+
+  .products_grid {
+    column-gap: 10px;
+    margin-bottom: 60px;
+  }
+
+  .products_item{
+    width: 344px;
+    height: 215px;
+  }
+
+  .products_item_img{
+    width: 142px;
+    height: 190px;
+  }
+
+  .products_item_title{
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .products_item_desc{
+    font-size: 13px;
+  }
+
+  .values_content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding-bottom: 500px;
+  }
+
+  .values_info, .values_button, .values_grid{
+    margin: 0 auto;
+  }
+
+  .values_title, .values_grid, .values_desc{
+    text-align: center;
+  }
+
+  .values_item_icon{
+    margin: 12px auto;
+  }
+
+  .values_item_desc{
+    width: auto;
+  }
+}
+/* 
+@media screen and (min-width: 1024px) and (max-width: 1023px) {
+
+} */
